@@ -1,6 +1,7 @@
 /* font style */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
+
 /* header styles */
 h3{
     color: #3A3A3A;
@@ -10,9 +11,10 @@ h3{
 
 }
 /* body */
-main{
+body{
     color: #3A3A3A;
     font-family: 'Poppins', sans-serif;
+    background-color: #F3F1FF;;
 }
 .half-width{
     width: 50%;
@@ -31,38 +33,38 @@ main{
     background-color: #AEAEAE;
 }
 .container{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
 }
 
 .half-width img{
     width: 440px;
     height: 400px;
 }
-.logos{
-    margin-left: 165px;
-    margin-right: 165px;
-    margin-top: 50px;
-}
+
 .section-title{
     text-align: center;
 }
 .popular-collection{
-    margin-left: 196px;
-    margin-right: 197px;
+    margin-left: 100px;
+    align-items: center;
 }
+
 .product-name{
     margin-top:0;
 }
+
 .collections{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-row-gap: 50px;
+    grid-row-gap: 40px;
     grid-gap: 30px;
+    width:100%;
 
 }
 .collection{
     box-shadow: .1px .1px 10px #1f1e1e34;
-    padding:14px;
+    padding:8px;
     border-radius: 10px;
 }
 .product img{
@@ -147,3 +149,32 @@ footer{
 .social-icon a:hover{
     color: rgba(26, 127, 241, 0.678);
 }
+
+/* media queries */
+/* mobile device*/
+
+@media only screen and (max-width: 567px) {
+    .popular-collection {
+        width: 100%;
+    }
+    .collections {
+      grid-template-columns:auto;
+      
+    }
+    .collection{
+        grid-column: 1;
+        
+    }
+    .container, .footer-last{
+        display: none;
+    }
+  }
+/* tab */
+  @media only screen and (min-width: 577px) and (max-width:768px) {
+            .popular-collection{
+                width: 100%;
+            }
+      .collections{
+          grid-template-columns:repeat(2,1fr);
+      }
+    }
