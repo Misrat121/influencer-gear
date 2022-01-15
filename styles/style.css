@@ -25,6 +25,10 @@ main{
     color: white;
     padding:10px 24px;
     border-radius: 35px;
+   transition: background-color 1s;
+}
+.link-button:hover{
+    background-color: #AEAEAE;
 }
 .container{
     display: flex;
@@ -38,6 +42,9 @@ main{
     margin-left: 165px;
     margin-right: 165px;
     margin-top: 50px;
+}
+.section-title{
+    text-align: center;
 }
 .popular-collection{
     margin-left: 196px;
@@ -72,9 +79,44 @@ main{
     color:#AEAEAE;
 }
 .last-button{
+    margin-top: 50px;
+    margin-left: 1144px;
+}
+.last-button a{
     color:#E02C6D ;
     text-decoration: none;
-    text-align: right;
+}
+.contact{
+    display: flex;
+    flex-direction: row;
+}
+.half-width1{
+    width: 50%;          
+}
+
+.half-width1 img{
+    width: 80%;
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+.contact-form{
+    margin-right: 20%;
+    margin-left: 5%;
+    padding-left: 10px;
+    box-shadow: 10px 10px 30px rgba(30, 68, 151, 0.747);
+    height: 280px; 
+    
+}
+.contact-button{
+   
+    text-decoration: none;
+    background-image: linear-gradient(rgb(53, 40, 236),rgb(71, 255, 163));
+    padding: 10px 10px;
+    color: white;
+   font-weight: 700px;
+   font-size: 15px;
+   border-radius: 5px;
 }
 footer{
     text-align: center;
@@ -84,14 +126,12 @@ footer{
     size:24px;
     margin:0;
 }
-.footer-container{
-    display: flex;
-    flex-direction: row;
+/* .footer-container{
     column-gap: 20px;
     justify-content: space-between;
     align-items: center;
   
-}
+} */
 .foot-p{
     size: 14px;
     font-weight: 700;
@@ -100,9 +140,10 @@ footer{
 .social-icon a{
     text-decoration: none;
     color: #fff;
-    transition: .4s all ease;
+    transition: .6s all ease;
+    width: 32px;
    
 }
 .social-icon a:hover{
-    color: #562EFF;
+    color: rgba(26, 127, 241, 0.678);
 }
